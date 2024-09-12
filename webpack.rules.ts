@@ -32,14 +32,7 @@ function rules(isDevMode: boolean): Required<ModuleOptions>['rules'] {
       test: /\.css$/i,
       use: [
         isDevMode ? MiniCssExtractPlugin.loader : 'style-loader', 
-        {
-          loader: 'css-loader',
-          options: {
-            modules: {
-              localIdentName: '[local]__[hash:hex:5]'
-            }
-          }
-        },
+        'css-loader',
         'postcss-loader'
       ]
     },

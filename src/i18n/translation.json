@@ -2,5 +2,9 @@
   "hello_world": {
     "en": "Hello, World!",
     "ru": "Привет, Мир!"
+  },
+  "app_name": {
+    "en": "Scheduler",
+    "ru": "Расписания"
   }
 }
